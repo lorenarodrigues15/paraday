@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem de Amor</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #d15f96;
+        }
+        p {
+            font-size: 24px;
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Amor!</h1>
+    <img src="https://static.giulianaflores.com.br/images/product/30024gg.jpg?ims=405x405" alt="Flores on-line" /> <!-- Substitua pelo URL de uma imagem de flores -->
+    <p>Flores online para você! </p>
+	<p>Você é a flor mais linda do meu jardim! Te amo!</p>
+
+  <h2 id="contagem"></h2>
+
+    <script>
+        // Data de início do relacionamento
+        const dataInicio = new Date("2024-08-30"); // Substitua pela data que vocês começaram a namorar
+        const hoje = new Date();
+        
+        // Cálculo da diferença em dias
+        const diffTime = Math.abs(hoje - dataInicio);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+        // Exibir a contagem
+        document.getElementById("contagem").innerText = `Estamos juntas há ${diffDays} dias!`;
+    </script>
+</body>
+</html>
+
